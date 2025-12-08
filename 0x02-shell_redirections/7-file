@@ -1,3 +1,2 @@
 #!/bin/bash
-export BEST="School"
-echo "Best School"
+echo "Best School" > $'*\\\'"Best School"\'\\*$\?\*\*\*\*\*:)'
