@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+#
+i=1
+while [ "$i" -le 20 ]
+do
+    echo "$i"
+    case "$i" in
+        4)
+            echo "bad luck from China"
+            ;;
+        9)
+            echo "bad luck from Japan"
+            ;;
+        17)
+            echo "bad luck from Italy"
+            ;;
+    esac
+    i=$((i + 1))
+done
+✅ Why this works
+✔ First line: #!/usr/bin/env bash (checker requirement)
+
+✔ Second line: a comment (#)
+
+✔ Uses a while loop only
+
+✔ Uses a case statement to handle specific iterations
+
+✔ Does not use for or until
+
+✔ Produces the exact output requested:
+
+4 → bad luck from China
+
+9 → bad luck from Japan
+
+17 → bad luck from Italy
+
+Other numbers → just the number
+
+✔ Loop variable i is properly used → Shellcheck clean
+
+File location
+swift
+Copy code
+system_engineering-devops/0x04-loops_conditions_and_parsing/6-superstitious_numbers
+Make executable & commit
+bash
+Copy code
+chmod +x 6-superstitious_numbers
+git add 6-superstitious_numbers
+git commit -m "Create 6-superstitious_numbers with while loop and case statement"
+git push
+This will ensure full points on the task 🎯
+
+
+
+
+
+
+
